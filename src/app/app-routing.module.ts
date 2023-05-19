@@ -4,9 +4,8 @@ import { HomeComponent } from './home/home.component';
 //import AWS from 'aws-sdk';
 
 const routes: Routes = [
-  {
-    path:'', component:HomeComponent
-  }
+  {path:'', component:HomeComponent},
+  {path:'search/:searchTerm', component:HomeComponent}
 ];
 
 @NgModule({
