@@ -5,6 +5,5 @@ export class Food{
     cookTime!:string;
     imageUrl!:string;
     favourite:boolean = false;
-    stars:number = 0;
     tags?:string[];
 }

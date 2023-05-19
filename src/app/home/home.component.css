@@ -7,19 +7,47 @@ ul{
     padding: 0;
 }
 
-li {
+ul li a{
     height: 25rem;
     width: 25rem;
-    border: 1px solid whitesmoke;
+    border: 2px solid white;
     border-radius: 1rem;
     margin: 0,5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: black;
+    color: firebrick;
 }
 
 li a:hover{
     opacity: 0.8;
     cursor: pointer;
+}
+
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+}
+
+.favourite{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.favourite.not{
+    color:grey;
+}
+
+.food-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cook-time{
+    font-size: .8rem;
+    flex: 3;
+    text-align: right;
 }

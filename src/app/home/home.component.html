@@ -17,7 +17,21 @@
 <ul>
     <li *ngFor="let food of foods">
         <a>
-            <img src="{{food}}" alt="">
+            <img src="{{food.imageUrl}}" alt="">
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+                </div>
+                <span class="favourite {{food.favourite?'':'not'}}">
+                    ❤
+                </span>
+                <div class="food-item-footer">
+                    <div class="cook-time">
+                        <span>⏲</span>
+                        {{food.cookTime}}
+                    </div>
+                </div>
+            </div>
         </a>
     </li>
 </ul>
