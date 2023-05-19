@@ -1,0 +1,23 @@
+    <!--
+    Obstawiam, że nie o takie rozwiązanie chodziło, tylko o związane z wykorzystaniem
+    pliku konfiguracyjnego umożliwiającego dostęp do kubełka na S3. Próbowałem w tym
+    swoich sił, lecz poległem. Zostałem przy rozwiązaniu lokalnym.   
+    <ul> 
+        <li>
+            <a href=""><img src="https://internmoodup.s3.eu-central-1.amazonaws.com/lasagna.jpg"></a>
+        </li>
+        <li>
+            <a href=""><img src="https://internmoodup.s3.eu-central-1.amazonaws.com/shakshuka.jpg"></a>
+        </li>
+        <li>
+            <a href=""><img src="https://internmoodup.s3.eu-central-1.amazonaws.com/spaghetti.jpg"></a>
+        </li>
+    </ul>
+    -->
+<ul>
+    <li *ngFor="let food of foods">
+        <a>
+            <img src="{{food}}" alt="">
+        </a>
+    </li>
+</ul>
