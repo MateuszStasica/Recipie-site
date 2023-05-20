@@ -8,19 +8,25 @@ export class FoodService {
 
   constructor() { }
 
+  getFoodById(id: number): Food{
+    return this.getAll().find(food => food.id == id)!;
+  }
+
   getAll():Food[]{
     return[
       {
         id:1,
-        name:'lasagne',
-        recipie:'',
+        name:'Lasagne',
+        ingredients:[],
+        recipie:'bla bla bla',
         cookTime:'60-80 min',
         imageUrl:'/assets/images/foods/food1.jpg',
         favourite: false,
       },
       {
         id:2,
-        name:'shakshuka',
+        name:'Shakshuka',
+        ingredients:[],
         recipie:'',
         cookTime:'15-20 min',
         imageUrl:'/assets/images/foods/food2.jpg',
@@ -28,7 +34,8 @@ export class FoodService {
       },
       {
         id:3,
-        name:'spaghetti bolognese',
+        name:'Spaghetti bolognese',
+        ingredients:[],
         recipie:'',
         cookTime:'40-50 min',
         imageUrl:'/assets/images/foods/food3.jpg',
