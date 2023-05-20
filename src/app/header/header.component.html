@@ -3,12 +3,22 @@
         <a href="#" routerLink="/" class="logo">Recipie Site</a>
         <nav>
             <ul>
-                <li><a href="#" routerLink="/login-page" class="login">Login</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#" routerLink="/signup-page" class="signup">Signup</a></li>
+                <li>
+                    <a routerLink="/login" class="login">Login</a>
+                </li>
+                <li class="menu-container">
+                    <a routerLink="/dashboard">Jan</a>
+                    <div class="menu">
+                        <a routerLink="/myrecepies">My recepies</a>
+                        <a>Logout</a>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/myrecepies">
+                        My recepies
+                        <span>3</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
