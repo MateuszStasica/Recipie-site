@@ -1,4 +1,5 @@
 <app-search></app-search>
+<app-not-found [visible]="!foods || foods.length <= 0" resetLinkText="Reset Search"></app-not-found>
   <!--
     Obstawiam, że nie o takie rozwiązanie chodziło, tylko o związane z wykorzystaniem
     pliku konfiguracyjnego umożliwiającego dostęp do kubełka na S3. Próbowałem w tym
@@ -15,7 +16,7 @@
         </li>
     </ul>
     -->
-<ul>
+    <ul>
     <li *ngFor="let food of foods">
         <a routerLink="/food/{{food.id}}">
             <img src="{{food.imageUrl}}" alt="">

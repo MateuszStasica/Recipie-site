@@ -17,7 +17,7 @@ export class FoodService {
       {
         id:1,
         name:'Lasagne',
-        ingredients:[],
+        ingredients:['a','b','c'],
         recipie:'bla bla bla',
         cookTime:'60-80 min',
         imageUrl:'/assets/images/foods/food1.jpg',

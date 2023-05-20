@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FoodPageComponent } from './food-page/food-page.component';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
